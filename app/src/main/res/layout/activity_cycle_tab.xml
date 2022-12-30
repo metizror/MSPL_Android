@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CycleTabActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/AppBarOverlay">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/_25sdp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:orientation="horizontal"
+                android:background="@drawable/search_icon_background"
+                android:layout_height="@dimen/_25sdp">
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:src="@drawable/ic_back_new"
+                    android:layout_height="@dimen/_14sdp">
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PATIENTS"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="@dimen/_60sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_height="@dimen/_36sdp">
+
+                <TextView
+                    android:id="@+id/tv_tab_census"
+                    android:layout_width="0px"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Census"
+                    android:background="@drawable/squre_tab_left"
+                    android:padding="@dimen/_6sdp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/tv_tab_need_refill"
+
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Need Refill"
+                android:padding="@dimen/_6sdp"
+                android:gravity="center"
+                android:background="@drawable/middle_white_radius"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="MissingPrefix" />
+
+
+
+            <TextView
+                android:id="@+id/tv_tab_will_be_refill"
+                android:layout_width="0px"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_35sdp"
+                android:text="Will be Refilled"
+                android:gravity="center"
+                android:padding="@dimen/_6sdp"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10sdp"
+                android:background="@drawable/right_border_white"
+                tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tab_fragment"
+        android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

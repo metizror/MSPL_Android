@@ -1,0 +1,150 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base myApplication theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/AntiqueWhite</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColorTertiary">#e8e8e8</item>
+    </style>
+
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+    </style>
+
+    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:datePickerMode" tools:ignore="NewApi">spinner</item>
+    </style>
+
+    <style name="TimePicker" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="textColorAlertDialogListItem">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+    <style name="DialogStyle" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+
+        <!-- dialog_background is drawable shape with corner radius -->
+        <item name="android:background">@drawable/refill_dialog_squre</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="TextStyleBNV">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:padding">0dp</item>
+
+        <item name="textAllCaps">false</item>
+
+
+    </style>
+
+   <!-- <style name="customfontstyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/my_custom_font</item>
+    </style>
+
+    <style name="customboldfontstyle" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/custom_bold_font</item>
+    </style>-->
+
+
+    <style name="roboto_medium">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+
+
+    <style name="TextOpenSans">
+        <item name="fontFamily">@string/font_openSans</item>
+    </style>
+    <style name="TextBold">
+        <item name="fontFamily">@string/font_bold</item>
+    </style>
+    <style name="TextLight">
+        <item name="fontFamily">@string/font_light</item>
+    </style>
+    <style name="TextMedium">
+        <item name="fontFamily">@string/font_medium</item>
+    </style>
+    <style name="textRegular">
+        <item name="fontFamily">@string/font_regular</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/translate_from_bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/translate_from_top_to_bottom</item>
+    </style>
+
+    <style name="MyDialogTheme2" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+</resources>

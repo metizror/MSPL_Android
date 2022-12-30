@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFAFA"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    tools:context=".CycleActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_3sdp"
+        android:text="Data not Available"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14sdp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_cycle_main">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/edittext_round_bg">
+
+        <Spinner
+            android:id="@+id/spinner_cycle_start_date"
+            style="@style/Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_next_cycle_start_date"
+            style="@style/TextMedium"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:text="Next cycle start dates:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sdp"
+            tools:ignore="MissingPrefix" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/_6sdp"
+            app:cardCornerRadius="@dimen/_6sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/TextMedium"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Your Next Cycle Delivery in 15 days"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="@dimen/login_button_text" />
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextMedium"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text="Date:"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/cycle_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text="Time:"
+                            style="@style/TextMedium"
+
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            style="@style/TextMedium"
+
+                            android:id="@+id/cycle_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:baselineAligned="false"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text="Changed by:"
+                            style="@style/TextMedium"
+
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/changed_by"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text="Changed on:"
+                            style="@style/TextMedium"
+
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                        <TextView
+                            android:id="@+id/changed_on"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_3sdp"
+                            android:text=""
+                            style="@style/TextMedium"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/login_edittext_name"
+                            tools:ignore="MissingPrefix" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/btn_update"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:padding="@dimen/_8sdp"
+            style="@style/TextMedium"
+            android:text="Update Delivery"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="@dimen/login_button_text" />
+
+        <TextView
+            android:id="@+id/btn_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:padding="@dimen/_8sdp"
+            android:text="Details"
+            style="@style/TextMedium"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="@dimen/login_button_text" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

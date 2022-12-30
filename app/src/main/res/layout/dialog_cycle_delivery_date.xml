@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_notes"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="It is within 10 days of cycle delivery, please contact pharmacy for any changes."
+            android:visibility="gone"
+            android:gravity="center"
+            style="@style/textRegular"
+            android:layout_gravity="center"
+            android:textColor="@color/Red"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:text="Select Date"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:id="@+id/lable_select_date"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cycle_delivery_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/lable_time"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:text="Time"
+        android:layout_marginLeft="@dimen/_8sdp"
+
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/ll_spinner_time"
+            android:visibility="gone"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/edittext_round_bg">
+        <Spinner
+            android:id="@+id/spinner_cycle_start_date"
+            style="@style/Spinner"
+            android:clickable="false"
+            android:focusable="false"
+            android:entries="@array/user_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_80sdp"
+            android:text="Close"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/_28sdp"/>
+        <Button
+            android:id="@+id/tv_save"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_80sdp"
+            android:text="Save"
+            android:visibility="visible"
+            android:textSize="@dimen/_12sdp"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/_28sdp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>

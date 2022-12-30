@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:ignore="MissingPrefix"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:gravity="center"
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardElevation="@dimen/_1sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_patient_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        style="@style/TextMedium"
+                        android:text="Patient Name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:layout_width="0px"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Dose Time"
+                            android:textColor="#f54f4f"
+                            android:textSize="@dimen/patientlist_value_text" />
+
+                        <TextView
+                            android:id="@+id/txt_last_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:gravity="end"
+                            android:text="10:12"
+                            style="@style/TextMedium"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/patientlist_value_text" />
+
+                    </LinearLayout>
+
+<!--                    <LinearLayout
+
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Order: "
+                            android:textColor="@color/lightgray"
+                            android:textSize="@dimen/patientlist_value_text" />
+
+                        <TextView
+                            android:id="@+id/txt_order_date"
+                            style="@style/TextMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_1sdp"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/patientlist_value_text" />
+                    </LinearLayout>-->
+
+
+
+
+
+                </LinearLayout>
+               <!-- <LinearLayout
+                    android:id="@+id/ll_notification_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_notification_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            style="@style/TextMedium"
+                            android:text="alert date/time:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp"
+                            />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_notification_date_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:gravity="end"
+                        android:text="10:12"
+                        style="@style/TextMedium"
+                        android:layout_weight="0.5"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/patientlist_value_text" />
+
+                    &lt;!&ndash;                    <LinearLayout
+
+                                            android:layout_width="0px"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:layout_gravity="right"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Order: "
+                                                android:textColor="@color/lightgray"
+                                                android:textSize="@dimen/patientlist_value_text" />
+
+                                            <TextView
+                                                android:id="@+id/txt_order_date"
+                                                style="@style/TextMedium"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/_1sdp"
+                                                android:text=""
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/patientlist_value_text" />
+                                        </LinearLayout>&ndash;&gt;
+
+
+
+
+
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:text="Drug Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/patientlist_value_text" />
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:layout_width="0px"
+                        android:gravity="end"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Dose Date"
+                        android:textColor="#f54f4f"
+                        android:textSize="@dimen/patientlist_value_text" />
+
+                    <TextView
+                        android:id="@+id/txt_last_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:gravity="end"
+                        android:text="26/03/18"
+                        style="@style/TextMedium"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/patientlist_value_text" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@color/lightgray">
+
+                </View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NOTE"
+                        style="@style/TextMedium"
+
+                        android:textColor="#2c2c2c"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/txt_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                        android:textColor="#bababa"
+                        android:textSize="@dimen/patientlist_value_text" />
+                    <LinearLayout
+                        android:id="@+id/ll_reply_info"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background_primary"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:gravity="center"
+                        android:layout_gravity="right"
+                        android:visibility="gone"
+                        android:minWidth="@dimen/_60sdp"
+                        android:minHeight="@dimen/_24sdp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_reply_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="REPLY"
+                            style="@style/TextMedium"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/img_reply"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/reply"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_20sdp" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detailBT"
+
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Details"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

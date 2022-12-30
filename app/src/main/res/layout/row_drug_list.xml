@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:gravity="center"
+            app:cardElevation="@dimen/_1sdp"
+
+            app:cardCornerRadius="@dimen/_4sdp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Dr"
+                        style="@style/TextMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="MissingPrefix" />
+                    <ImageView
+                        android:id="@+id/img_prescription"
+                        android:padding="@dimen/_4sdp"
+                        android:visibility="gone"
+                        android:src="@drawable/prescription"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp" />
+                    <ImageView
+                        android:id="@+id/img_info"
+                        android:padding="@dimen/_4sdp"
+                        android:src="@drawable/ic_info"
+                        android:layout_width="@dimen/_26sdp"
+                        android:layout_height="@dimen/_26sdp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Refills:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/patientlist_value_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_refill_remaining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="9"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/patientlist_value_text" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical|right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Delivered: "
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_last_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="2018-20-12"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Qty:"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_qty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="10"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Next Refill:"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_next_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="2018-20-12"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/patientlist_value_text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

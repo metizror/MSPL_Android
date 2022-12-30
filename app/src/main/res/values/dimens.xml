@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="login_edittext_name">@dimen/_14sdp</dimen>
+    <dimen name="login_edittext_pswd">@dimen/_14sdp</dimen>
+    <dimen name="login_button_text">@dimen/_16sdp</dimen>
+
+    <dimen name="patientlist_label_text">@dimen/_12sdp</dimen>
+    <dimen name="patientlist_value_text">@dimen/_10sdp</dimen>
+    <dimen name="fab_size_normal">50dp</dimen>
+    <dimen name="fab_size_mini">32dp</dimen>
+    <dimen name="labels_text_size">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">6dp</dimen>
+    <dimen name="notification_badge_textsize_small">@dimen/_10sdp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">@dimen/_10sdp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">@dimen/_10sdp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">@dimen/_40sdp</dimen>
+
+
+</resources>

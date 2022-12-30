@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CensusFragment"
+    tools:ignore="MissingPrefix">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_census"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <CheckBox
+        android:id="@+id/cb_client_all_changes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip Cycle med changes for all clients?"
+        android:layoutDirection="rtl"
+        android:layout_marginLeft="@dimen/_10sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_all_active"
+            style="@style/TextMedium"
+            android:layout_width="0px"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:gravity="center"
+            android:text="All Active"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="@dimen/_14sdp"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/btn_save"
+            style="@style/TextMedium"
+            android:layout_width="0px"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/shape_rounbded_squre_top_cycle"
+            android:text="Save"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+
+
+</LinearLayout>

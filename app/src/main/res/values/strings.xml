@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">RN Android</string>
+    <string name="loading">loading</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_order">Add Order</string>
+    <string name="order_history">Order History</string>
+    <string name="create_one"><![CDATA[<u>Register</u>]]></string>
+    <string name="create_one1"><u>Register</u></string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="condirm_password">Confirm Password</string>
+    <string name="password_validation_1">- One letter</string>
+    <string name="password_validation_2">- One special character like(# $ ! ? &amp; * . ( ) _ = ~ ? | / % ^ @ , \' \" : ; )</string>
+    <string name="password_validation_3">- One number </string>
+    <string name="password_validation_4">- Minimum 6 characters </string>
+    <string name="biometric_title">Login</string>
+
+
+    <string name="biometric_subtitle">Login to your  account</string>
+    <string name="biometric_description">Place your finger on the device home button to verify your identity</string>
+
+    <string name="biometric_negative_button_text">CANCEL</string>
+    <string name="biometric_error_sdk_not_supported">Sdk version not supported</string>
+
+
+    <string name="biometric_error_hardware_not_supported">Device does not support biometric authentication</string>
+    <string name="biometric_error_fingerprint_not_available">Fingerprint is not registered in device</string>
+    <string name="biometric_error_permission_not_granted">Permission is not granted by user</string>
+    <string name="biometric_failure">Login not successful!</string>
+    <string name="biometric_cancelled">Authentication cancelled by user</string>
+    <string name="biometric_success">Login Successful</string>
+    <string name="use_fingerprint_or_password_to_login">Use Fingerprint or Password to login</string>
+    <string name="todo">TODO</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="no_account_yet">No account yet?</string>
+    <string name="search_patient">Search Patient</string>
+
+    <string-array name="user_type">
+        <item>Select User Type</item>
+        <item>Group home</item>
+        <item>Assisted</item>
+        <item>Skilled</item>
+        <item>Hospice</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="font_openSans" translatable="false">OpenSans-Bold.ttf</string>
+    <string name="font_bold" translatable="false">Roboto-Bold.ttf</string>
+    <string name="font_light" translatable="false">Roboto-Light.ttf</string>
+    <string name="font_medium" translatable="false">Roboto-Medium.ttf</string>
+    <string name="font_regular" translatable="false">Roboto-Regular.ttf</string>
+    <string name="str_hcp_order">Please upload HCP order</string>
+    <string name="str_document_here">Please upload document</string>
+
+
+
+    <string name="txt_media_selection_title">Add a photo to your message</string>
+    <string name="txt_select_from_gallery">Choose photo from library</string>
+    <string name="txt_select_from_camera">Take photo with camera</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="added_drug">Added Drug</string>
+    <string name="discontinued_drug">Discontinued Drug</string>
+    <string name="data_not_available">Data not available...!!!</string>
+    <string name="new_pass_and_confim_pass_not_match">New password and Confirm password does not match</string>
+    <string name="old_pass_and_new_pass_same_enter_diff_pass">Old password and new password are the same.Please enter a different password</string>
+    <string name="new_pass_not_strong">New password is not strong enough, Please check all required characters</string>
+    <string name="something_went_wrong">Something Went Wrong...!!!</string>
+    <string name="QR_code_scanning_error">QR code scanning error. Please give medications manually</string>
+    <string name="barcode_scanning_error">Barcode scanning error. Please give medications manually</string>
+    <string name="no_medication_available_at_this_time">No Medication available at this time</string>
+    <string name="medpass_alert">Medpass Alert</string>
+    <string name="multipacks_message">Multiple paks for this medpass.</string>
+    <string name="successful">Successful</string>
+    <string name="please_remember_to_take_vitals_if_necessary">Please remember to take vitals, if necessary.</string>
+    <string name="note">Note</string>
+    <string name="current_medpass_is_given">Current Medpass is given.</string>
+    <string name="invalid_scan">Invalid scan</string>
+    <string name="wrong_patient">Wrong Patient</string>
+    <string name="there_is_no_medpass_available_for_this_prescription">There is no medpass available for this prescription</string>
+    <string name="no_prescription_image_available">No Prescription Image available.</string>
+    <string name="images_upload_message">I acknowledge that I am fully HIPAA compliant to upload pictures.</string>
+    <string name="administered">ADMINISTERED</string>
+    <string name="take_a_photo">Take a photo</string>
+    <string name="map_consultant">MAP Consultant</string>
+</resources>

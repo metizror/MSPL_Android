@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_patient_logo"
+        android:iconTint="@color/lightgray"
+        android:visible="false"
+        android:enabled="false"
+        android:title="Patient"/>
+    <item
+        android:id="@+id/navigation_add_order"
+        android:icon="@drawable/ic_home_history"
+        android:iconTint="@color/lightgray"
+        android:visible="false"
+        android:enabled="false"
+        android:title="Order"/>
+    <item
+        android:id="@+id/navigation_cycle"
+        android:icon="@drawable/ic_cycle_logo"
+        android:iconTint="@color/lightgray"
+        android:visible="false"
+        android:enabled="false"
+        android:title="Cycle"/>
+    <item
+        android:id="@+id/navigation_medpass"
+        android:icon="@drawable/ic_medpass_logo"
+        android:iconTint="@color/lightgray"
+        android:title="Medpass"/>
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_inventory"
+        android:iconTint="@color/lightgray"
+        android:visible="false"
+        android:enabled="false"
+        android:title="Inventory"/>
+</menu>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".MedPrescriptionDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:theme="@style/AppBarOverlay">
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="@dimen/_50sdp">
+
+                        </LinearLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:id="@+id/patient_image"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_70sdp"
+                            android:src="@drawable/ic_user_placeholder"
+                            android:layout_gravity="center_horizontal"
+                            app:civ_border_color="#e7e7e7"
+                            app:civ_border_width="1dp" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_5sdp"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/txt_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="John Donga"
+                            style="@style/TextBold"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_14sdp"
+                            tools:ignore="MissingPrefix" />
+                        <TextView
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:id="@+id/txt_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(M)"
+                            style="@style/TextBold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14sdp"
+                            tools:ignore="MissingPrefix" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/txt_birthdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01-02-1993"
+                        android:textColor="#999"
+                        android:textSize="@dimen/_12sdp"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:weightSum="2"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.3"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_drug_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CLONIDINE HCL"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:id="@+id/tv_rx_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rx Number"
+                            android:textColor="#838383"
+                            android:textSize="@dimen/_12sdp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_5sdp"
+
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Direction: "
+                                android:visibility="gone"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp" />
+                            <TextView
+                                android:id="@+id/tv_drug_details"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Take 1 tabledzxr,dmg;klrdggrkldgmlxfghmfghklfthjghrthkjkrtrtjrtjrtjkjmrtht  twice daily at 8a/8p"
+                                android:textColor="#838383"
+                                android:textSize="@dimen/_12sdp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_marginRight="@dimen/_6sdp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/rxImage"
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_gravity="right"
+                            android:src="@drawable/rx" />
+
+
+                        <LinearLayout
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_gravity="right"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:background="@drawable/edittext_round_bg"
+                            android:layout_height="@dimen/_70sdp">
+
+                            <ImageView
+                                android:layout_margin="@dimen/_3sdp"
+                                android:id="@+id/img_drug"
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_60sdp">
+                            </ImageView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0px"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:gravity="center"
+                                app:cardCornerRadius="@dimen/_6sdp"
+                                app:cardPreventCornerOverlap="false">
+
+
+
+                                <LinearLayout
+                                    android:paddingTop="@dimen/_20sdp"
+                                    android:layout_marginLeft="@dimen/_8sdp"
+                                    android:layout_marginRight="@dimen/_8sdp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+
+                                    android:paddingBottom="@dimen/_20sdp"
+                                    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:weightSum="2"
+                                        android:layout_height="wrap_content">
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Dose Time"
+                                                android:textColor="#838383"
+                                                android:textSize="@dimen/_12sdp" />
+                                            <TextView
+                                                android:id="@+id/tv_drug_time"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="12:00:00"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_14sdp" />
+
+                                        </LinearLayout>
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_weight="1"
+                                            android:orientation="vertical"
+                                            android:layout_height="wrap_content">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Dose Qty  "
+                                                android:textColor="#838383"
+                                                android:textSize="@dimen/_12sdp" />
+                                            <TextView
+                                                android:id="@+id/tv_drug_qty"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="0.5"
+                                                android:textColor="@color/black"
+                                                android:textSize="@dimen/_14sdp" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+                                    <com.rn.android.customview.ActionEditText
+                                        android:id="@+id/edt_notes"
+                                        android:layout_marginTop="@dimen/_10sdp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Notes"
+                                        android:textColorHint="#838383"
+                                        android:paddingTop="@dimen/_5sdp"
+                                        android:minHeight="@dimen/_50sdp"
+                                        android:maxLength="150"
+                                        android:inputType="text|textMultiLine|textNoSuggestions|textCapSentences"
+                                        android:maxLines="3"
+                                        android:gravity="start"
+                                        android:textAlignment="viewStart"
+                                        android:imeOptions="actionDone"
+                                        android:paddingLeft="@dimen/_5sdp"
+                                        android:layout_gravity="start"
+                                        android:background="@drawable/note_bg"
+                                        android:textColor="#838383"
+                                        android:textSize="@dimen/_12sdp" />
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_5sdp"
+                            android:layout_height="wrap_content">
+                            <CheckBox
+                                android:textSize="@dimen/_10sdp"
+                                android:id="@+id/cb_verified_hcp_order"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="HCP Order and the pharmacy label"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/cb_verified_Patient"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pharmacy label and the medication sheet" />
+                            <CheckBox
+                                android:textSize="@dimen/_10sdp"
+                                android:id="@+id/cb_verified_drug"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pharmacy label and the medication sheet" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_8sdp"
+                            android:id="@+id/btn_taking"
+                            android:gravity="center"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Administered"
+                            android:textColor="@color/WhiteSmoke"
+                            android:textSize="@dimen/_12sdp" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_refused"
+                            android:layout_width="0px"
+                            android:layout_weight="1"
+                            android:padding="@dimen/_8sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/mess_button_bg"
+                            android:text="REFUSED"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:textColor="@color/WhiteSmoke"
+                            android:textSize="@dimen/_12sdp" />
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="@dimen/_130sdp"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/mess_button_cancel"
+                        android:text="CANCEL"
+                        android:gravity="center"
+                        android:id="@+id/btn_cancel"
+                        android:textColor="#01B6C3"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

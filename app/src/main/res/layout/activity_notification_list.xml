@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    tools:context="com.rn.android.util.NotificationListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="@dimen/_40sdp"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/AppBarOverlay">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/_25sdp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:orientation="horizontal"
+                android:background="@drawable/search_icon_background"
+                android:layout_height="@dimen/_25sdp">
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:src="@drawable/ic_back_new"
+                    android:layout_height="@dimen/_14sdp">
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</RelativeLayout>

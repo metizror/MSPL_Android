@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:padding="@dimen/_16sdp"
+        android:background="@drawable/dialog_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_patient_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
+            />
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/tv_patient_name"
+            tools:ignore="MissingConstraints">
+
+            <!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rl_items"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                tools:listitem="@layout/alloy_hospital_item"/>-->
+
+            <TextView
+                android:id="@+id/tvspinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_round_bg"
+                android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                android:drawableTint="@android:color/black"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_10sdp"
+                android:text="Select" />
+
+            <Spinner
+                android:id="@+id/spList"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/edittext_round_bg"
+                android:padding="@dimen/_15sdp"
+                android:spinnerMode="dropdown"
+                />
+
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:hint="Note"
+                android:textColorHint="@color/colorPrimary"
+                android:padding="@dimen/_4sdp"
+                android:background="@drawable/edittext_round_bg"
+                android:gravity="top"
+                android:inputType="text"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txt_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mess_button_bg"
+                    android:gravity="center"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="CANCEL"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/txt_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/mess_button_bg"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_gravity="center"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="OK"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

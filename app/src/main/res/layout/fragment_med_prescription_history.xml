@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/search_background"
+                android:layout_height="@dimen/_36sdp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:id="@+id/search"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:hint="Search Drug"
+                    app:iconifiedByDefault="false"
+                    app:searchIcon="@null"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/lightgray"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    app:theme="@style/AppSearchView" />
+
+                <LinearLayout
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:background="@drawable/search_icon_background"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:layout_width="@dimen/_16sdp"
+                        android:src="@drawable/ic_search_white"
+                        android:layout_height="@dimen/_16sdp">
+
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="#F4F4F4"
+
+                android:id="@+id/rv_taken_prescription_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/AppBarOverlay">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/_25sdp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:orientation="horizontal"
+                android:background="@drawable/search_icon_background"
+                android:layout_height="@dimen/_25sdp">
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:src="@drawable/ic_back_new"
+                    android:layout_height="@dimen/_14sdp">
+                </ImageView>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DETAIL"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_data"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@color/colorPrimary">
+
+            </View>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:context=".NotificationDetilsActivity">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_no_data"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center"
+
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="No data available"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+           style="@style/TextMedium"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

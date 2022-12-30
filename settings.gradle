@@ -1,0 +1,2 @@
+include ':app', ':biometric-auth'
+rootProject.name='PelTaskAndroidX'

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02b6c3</color>
+    <color name="colorPrimaryDark">#00897B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="WindowsBackground"> #B2DFDB</color>
+
+    <color name="Button">#004D40</color>
+
+    <color name="Tomato">#FF6347</color>
+    <color name="OrangeRed">#FF4500</color>
+    <color name="DeepPink">#FF1493</color>
+    <color name="Fuchsia">#FF00FF</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Red">#FF0000</color>
+    <color name="AntiqueWhite">#FAEBD7</color>
+    <color name="Salmon">#FA8072</color>
+    <color name="GhostWhite">#F8F8FF</color>
+    <color name="MintCream">#F5FFFA</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Beige">#F5F5DC</color>
+
+    <color name="white">#ffffff</color>
+    <color name="lightgray1">#EFEDED</color>
+    <color name="lightgray">#bdbdbd</color>
+    <color name="darkgray">#666666</color>
+    <color name="black">#000</color>
+    <color name="edittext_color">#5c5c5c</color>
+    <color name="black_transparent">#A1000000</color>
+    <color name="dialog_bg_color">#F2F5F5</color>
+    <color name="txt_ash_grey">#6B778F</color>
+    <color name="soft_grey">#8E8E8E</color>
+</resources>

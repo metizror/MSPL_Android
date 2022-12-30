@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rn.android.MedPassPatientListActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/AppBarOverlay">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/_25sdp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:orientation="horizontal"
+                android:background="@drawable/search_icon_background"
+                android:layout_height="@dimen/_25sdp">
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:src="@drawable/ic_back_new"
+                    android:layout_height="@dimen/_14sdp">
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECEIVED"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_from_date"
+                    android:layout_weight="2"
+                    android:layout_width="0px"
+                    android:layout_height="@dimen/_36sdp"
+                    android:editable="false"
+                    android:focusable="false"
+
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#AEAEAE"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:text="From Date"
+                    android:layout_gravity="center"
+                    android:textColorHint="#AEAEAE"
+                    android:background="@drawable/search_background"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+
+                <EditText
+                    android:id="@+id/edt_to_date"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:layout_weight="2"
+                    android:layout_width="0px"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_height="match_parent"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:textColor="#AEAEAE"
+                    android:height="@dimen/_36sdp"
+                    android:text="To Date"
+                    android:layout_gravity="center"
+                    android:textColorHint="#AEAEAE"
+                    android:background="@drawable/search_background"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+
+                <LinearLayout
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:id="@+id/ll_search_from_to"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@drawable/search_background"
+                    android:layout_height="@dimen/_27sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:src="@drawable/ic_search_white_primary"
+                        android:layout_height="@dimen/_16sdp">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:id="@+id/ll_search"
+                android:background="@drawable/search_background"
+                android:layout_height="@dimen/_36sdp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:layout_weight="1"
+                    android:id="@+id/search"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:hint="Search"
+                    app:iconifiedByDefault="false"
+                    app:searchIcon="@null"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search Item"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/lightgray"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    app:theme="@style/AppSearchView" />
+                <LinearLayout
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:id="@+id/ll_scanner"
+                    android:background="@drawable/search_icon_background"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:src="@drawable/ic_search_white"
+                        android:layout_height="@dimen/_16sdp">
+
+
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_medication_received"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:background="#F4F4F4"
+            android:orientation="vertical">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_received_drug"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_6sdp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

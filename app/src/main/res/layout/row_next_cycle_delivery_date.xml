@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:padding="@dimen/_6sdp"
+            android:id="@+id/ll_date_time"
+            android:background="@drawable/edittext_round_bg"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:text="Date"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="Date"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:src="@drawable/ic_down"
+            android:id="@+id/ic_down_arrow"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:layout_height="@dimen/_15sdp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

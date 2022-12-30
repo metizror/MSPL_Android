@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="@dimen/_2sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WhiteSmoke"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/dialog_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:padding="8dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Note"
+            android:layout_margin="@dimen/_5sdp"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/lightgray"
+            android:textColor="#000"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:textSize="16sp">
+
+            <Button
+                android:id="@+id/dialog_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_background_primary"
+                android:text="Cancel"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="@dimen/_14sdp" />
+
+            <Button
+                android:id="@+id/dialog_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_background_primary"
+                android:text="Save"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

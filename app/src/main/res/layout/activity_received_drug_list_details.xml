@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rn.android.MedPassPatientListActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:theme="@style/AppBarOverlay">
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="@dimen/_25sdp"
+                android:gravity="center"
+                android:backgroundTint="#ffffff"
+                android:orientation="horizontal"
+                android:background="@drawable/search_icon_background"
+                android:layout_height="@dimen/_25sdp">
+                <ImageView
+                    android:layout_width="@dimen/_14sdp"
+                    android:src="@drawable/ic_back_new"
+                    android:layout_height="@dimen/_14sdp">
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_activity_name"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DETAIL"
+                style="@style/TextBold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+        </FrameLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/search_background"
+                android:layout_height="@dimen/_36sdp">
+
+                <androidx.appcompat.widget.SearchView
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:id="@+id/search"
+                    android:layout_width="0px"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:hint="Search"
+                    app:iconifiedByDefault="false"
+                    app:searchIcon="@null"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/lightgray"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    app:theme="@style/AppSearchView" />
+                <LinearLayout
+
+                    android:layout_width="@dimen/_30sdp"
+                    android:gravity="center"
+                    android:background="@drawable/search_icon_background"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:src="@drawable/ic_search_white"
+                        android:layout_height="@dimen/_16sdp">
+
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_scanner"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/qr_code" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#F4F4F4"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_received_drug_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_6sdp"
+                android:layout_marginRight="@dimen/_6sdp">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

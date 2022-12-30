@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+
+        android:background="@drawable/dialog_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="Message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray" />
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:text="Thank you.We have received your order. Patient Name: FORTIN,MICHAEL, Drug: ALOCRIL 2 % (refill -5) and Order type: TEST, Order date:7/10/2019 12:49:35 PM"
+                android:textColor="#b5b5b5"
+                android:textSize="@dimen/_10sdp"
+           />
+            <ImageView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/dash_line" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_reply_info"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_10sdp_radius"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/_5sdp"
+
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:layout_gravity="right"
+                android:minWidth="@dimen/_60sdp"
+                android:minHeight="@dimen/_30sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pharmacy Team"
+                    style="@style/TextMedium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10sdp" />
+            </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llTop"
+
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <com.rn.android.customview.ActionEditText
+                android:id="@+id/edt_reply"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#838383"
+                android:paddingTop="@dimen/_5sdp"
+                android:minHeight="@dimen/_70sdp"
+                android:maxLength="300"
+                android:inputType="text|textMultiLine|textNoSuggestions|textCapSentences"
+                android:maxLines="3"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:imeOptions="actionDone"
+                android:paddingLeft="@dimen/_5sdp"
+                android:layout_gravity="start"
+                android:background="@drawable/note_bg"
+                android:textColor="#838383"
+                android:textSize="@dimen/_12sdp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp">
+
+                <Button
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:id="@+id/btn_dialog_cancel"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/edittext_background"
+                    android:text="Cancel"
+                    android:backgroundTint="#bababa"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+                <Button
+                    android:id="@+id/btn_dialog_send"
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:background="@drawable/edittext_background"
+                    android:text="SEND"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
